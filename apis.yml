@@ -1,7 +1,26 @@
 aid: gen-g
-name: Gen G
-description: Gen G is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gen-g.png
+name: Gen.G
+description: Gen.G is a global esports organization founded in 2017 (originally KSV
+  eSports) that connects the United States and Asia, operating from Los Angeles, Seoul,
+  and Shanghai. It fields professional teams across League of Legends, Valorant, PUBG,
+  Counter-Strike 2, Rocket League, Fortnite, Brawl Stars, Honor of Kings, Mobile Legends,
+  NBA 2K, Overwatch, Rainbow Six Siege, and EA FC, and runs a youth esports academy
+  program alongside merchandise and fan-engagement businesses. Backed by Canaan Partners
+  among other investors, Gen.G was valued at roughly $250 million as of 2022. It is
+  a consumer esports brand and merchandise operator with a Shopify-based storefront;
+  it publishes no public developer API, so this profile carries company identity only.
 url: https://raw.githubusercontent.com/api-evangelist/gen-g/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +28,33 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website: https://geng.gg/
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Esports
+- Gaming
+- Entertainment
+- Sports
+- Media
+- Consumer
 apis: []
+common:
+- type: Website
+  url: https://geng.gg/
+- type: TermsOfService
+  url: https://geng.gg/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://geng.gg/policies/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
