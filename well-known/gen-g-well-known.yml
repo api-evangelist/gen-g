@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://geng.gg/.well-known/
+host: https://geng.gg
+notes: >-
+  geng.gg is a Shopify-powered storefront. The /.well-known/ OIDC and
+  OAuth-authorization-server documents describe Shopify's Customer Account API
+  (customer login for the Gen.G store), served under the geng.gg domain. A
+  control request to a bogus /.well-known/ path returns 404, confirming these
+  are real discovery documents and not an SPA catch-all.
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: geng-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: geng-oauth-authorization-server.json
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
