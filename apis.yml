@@ -41,7 +41,7 @@ x-tier-reason: portfolio-lead
 x-website: https://geng.gg/
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-08-08'
+modified: '2026-10-06'
 tags:
 - Company
 - Esports
@@ -52,6 +52,8 @@ tags:
 - Consumer
 apis: []
 common:
+- url: https://geng.gg/pages/news
+  type: Blog
 - type: Website
   url: https://geng.gg/
 - type: TermsOfService
